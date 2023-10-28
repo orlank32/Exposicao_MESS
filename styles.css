@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  flex-flow: row wrapp;
+  height: 100px;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Young Serif', serif;
+  padding: 1.5rem 6rem;
+}
+
+.expo{
+  flex: 20%;
+  text-align: center;
+  margin-left: 10%;
+  color: white;
+
+}
+
+.expo h1{
+  font-size: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu{
+  flex: 70%;
+  text-align: right;
+  padding: 20px;
+  margin-right: 10%;
+}
+
+/* Restante do seu CSS */
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+  transition: color 0.3s; /* Adicionei uma transição suave para a cor do texto */
+}
+
+.menu a:hover{
+  color: blue;
+  border-top: 4px solid;
+}
+
+.conteudo-box {
+  background-color: #f5f5f5; /* Cor de fundo do box */
+  padding: 20px; /* Espaçamento interno do box */
+  border: 1px solid #ddd; /* Borda ao redor do box */
+  border-radius: 5px; /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaço inferior para separar do próximo conteúdo */
+  text-align: justify;
+  margin: 20px;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.conteudo-box img {
+  display: block; /* Remove espaçamento abaixo da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente a imagem */
+  max-width: 250px; /* Define a largura máxima para a imagem */
+  height: auto; /* Mantém a proporção de aspecto da imagem */
+}
+
+
+
+.conteudo-box h2 {
+  font-size: 40px; /* Tamanho da fonte para o título */
+  color: red; /* Cor do título */
+  margin-bottom: 10px; /* Espaço inferior após o título */
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-family: 'Young Serif', serif;
+}
+
+.conteudo-box p {
+  font-size: 30px; /* Tamanho da fonte para o texto */
+  color: #666; /* Cor do texto */
+  margin-bottom: 10px; /* Espaço inferior após cada parágrafo */
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+
+/* Seção inicial */
+.first-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.first-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; /* Centraliza o título horizontalmente */ 
+}
+
+/* Seção "O dia em que a Terra parou" */
+#terra-parou {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+#terra-parou video {
+  max-width: 100%;
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+#terra-parou h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; /* Centraliza o título horizontalmente */
+  font-family: 'Young Serif', serif;
+}
+
+#sarau {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+#sarau video {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+}
+
+#sarau h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; /* Centraliza o título horizontalmente */
+  font-family: 'Young Serif', serif;
+}
+
+@media screen and (max-width: 730px) {
+  #terra-parou h2,
+  #sarau h2 {
+    font-size: 18px; /* Tamanho de fonte menor para dispositivos móveis */
+  }
+}
